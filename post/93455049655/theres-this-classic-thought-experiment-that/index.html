@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex">
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("archive-theme");
+          document.documentElement.dataset.theme =
+            savedTheme === "dark" || savedTheme === "light" ? savedTheme : "auto";
+        } catch {
+          document.documentElement.dataset.theme = "auto";
+        }
+      })();
+    </script><title>Fake Charity Nerd Girl (theres this classic thought experiment that...)</title>
+    <link rel="icon" type="image/jpeg" href="../../../avatars/worldoptimization.jpg">
+    
+  <link rel="stylesheet" href="../../../_astro/ArchiveLayout.BwDbLHrJ.css"></head>
+  <body>
+    <label class="theme-picker">
+      <span class="visually-hidden">Color theme</span>
+      <select id="archive-theme" aria-label="Color theme">
+        <option value="auto">Auto Dark</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
+    </label>
+    <div class="archive-shell">
+      <header class="archive-masthead">
+  <img class="tumblr-avatar tumblr-avatar-image archive-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+  <h1><a href="../../../index.html">Fake Charity Nerd Girl</a></h1>
+  <p class="archive-subtitle">resist microstructural oppression</p>
+</header>
+      <main class="archive-layout">
+        
+  <section class="archive-feed individual-post-feed">
+    <article class="archive-post" data-post-id="93455049655">
+  <header class="post-header">
+    <img class="tumblr-avatar tumblr-avatar-image post-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+    <div class="post-heading">
+      <div class="post-blog">worldoptimization</div>
+      <div class="post-byline">
+        2014-08-01 01:30:42
+      </div>
+    </div>
+  </header>
+  <div class="post-content">
+    
+          
+
+<p>There’s this classic thought experiment that people use to argue against utilitarianism. You’re a doctor with five patients about to die for want of different organs, when you get one patient who’s in no danger of dying but is a match for all five of them. You can harvest his organs (which will kill him) and no one will ever know. Killing him seems correct under utilitarianism, but is it really the right thing to do?</p><p>I’ve heard two utilitarian responses to the thought experiment. One is that killing the guy is the right thing to do, and our moral intuitions, not designed for weird edge cases such as this, are leading us astray. The other is that killing the guy is wrong, because you’re contributing to a precedent of killing random people whenever they come to the hospital and that outweighs the four lives you’re saving.</p><p>But with <a href="http://slatestarcodex.com/2014/05/16/you-kant-dismiss-universalizability/">this</a>&nbsp;and <a href="http://smile.amazon.com/Game-Theory-Drew-Fudenberg/dp/0262061414?sa-no-redirect=1">this</a>&nbsp;floating around my head recently I’ve settled on a third solution. I think that killing him does increase utility. But if everyone made the utility-increasing choice, then the world would be a worse place. It’s the altruistic version of the prisoner’s dilemma.</p><p>So how do we solve this? This is where moral rules like “keep your promises” or “don’t tell lies” or “don’t kill people even if you think it’s a really good idea” come in, to enforce coordination. Folk morality does a great job with this. The issue is that folk morality is a <a href="http://wiki.lesswrong.com/wiki/Paperclip_maximizer">paperclip</a> <a href="http://slatestarcodex.com/2014/07/30/meditations-on-moloch/">maximizer</a>. It’s optimized for genetic and memetic fitness rather than any human values. And it still seems like utilitarians do better than most deontologists on the important questions. But this failure mode is kind of a problem.</p>
+          <div class="post-tags">
+      <a class="post-tag" href="../../../tagged/ethics/index.html">#ethics</a>
+    </div>
+        
+  </div>
+</article>
+  </section>
+
+      </main>
+    </div>
+    <script type="module">var e=document.querySelector(`#archive-theme`);if(e instanceof HTMLSelectElement){let t=document.documentElement.dataset.theme;e.value=t===`dark`||t===`light`?t:`auto`,e.addEventListener(`change`,()=>{let t=e.value;document.documentElement.dataset.theme=t;try{t===`auto`?localStorage.removeItem(`archive-theme`):localStorage.setItem(`archive-theme`,t)}catch{}})}</script></body>
+</html>

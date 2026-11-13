@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex">
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("archive-theme");
+          document.documentElement.dataset.theme =
+            savedTheme === "dark" || savedTheme === "light" ? savedTheme : "auto";
+        } catch {
+          document.documentElement.dataset.theme = "auto";
+        }
+      })();
+    </script><title>Fake Charity Nerd Girl (so i was reading the times today and one of the...)</title>
+    <link rel="icon" type="image/jpeg" href="../../../avatars/worldoptimization.jpg">
+    
+  <link rel="stylesheet" href="../../../_astro/ArchiveLayout.BwDbLHrJ.css"></head>
+  <body>
+    <label class="theme-picker">
+      <span class="visually-hidden">Color theme</span>
+      <select id="archive-theme" aria-label="Color theme">
+        <option value="auto">Auto Dark</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
+    </label>
+    <div class="archive-shell">
+      <header class="archive-masthead">
+  <img class="tumblr-avatar tumblr-avatar-image archive-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+  <h1><a href="../../../index.html">Fake Charity Nerd Girl</a></h1>
+  <p class="archive-subtitle">resist microstructural oppression</p>
+</header>
+      <main class="archive-layout">
+        
+  <section class="archive-feed individual-post-feed">
+    <article class="archive-post" data-post-id="135326691249">
+  <header class="post-header">
+    <img class="tumblr-avatar tumblr-avatar-image post-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+    <div class="post-heading">
+      <div class="post-blog">worldoptimization</div>
+      <div class="post-byline">
+        2015-12-16 17:43:13
+      </div>
+    </div>
+  </header>
+  <div class="post-content">
+    
+          
+
+<p>So I was reading the Times yesterday and one of the letters went something like&nbsp;“It’s troubling that Scalia would cite debunked social science such as the mismatch hypothesis–haven’t you seen <a href="http://www.urban.org/urban-wire/affirmative-action-mismatch-theory-isnt-supported-credible-evidence">this blog post</a>?”</p><p>So of course I had to check out the post, which led to a rabbit hole of links, so I thought I’d summarize what I found.</p><p>The first thing Chingos cites in his post is <a href="http://scholar.harvard.edu/files/joshuagoodman/files/paper_2.pdf">this paper</a>&nbsp;which uses a scholarship program in Massachusetts in which the top 25% scoring students in each school district on a standardized test were given free tuition at any state university. They compared the students just above and just below the threshold, and found that getting the scholarship made students significantly more likely to attend state universities and that this made them less likely to graduate. Which is interesting, but seems not totally the same thing as mismatch from affirmative action? This is basically saying that (for kids around the 75th percentile of their district) going to a school they’re overqualified for makes them less likely to graduate, while mismatch theory says going to a school you’re underqualified for makes you less likely to graduate. These things could both be true.</p><p>And actually, as I read the paper more closely (this factoid is buried on page 23) it says that non-white students <i>do not </i>see a drop in their persistence rates from attending state universities. So if I’m understanding this correctly this effect only holds for white students? Uh, this doesn’t exactly seem like evidence against mismatch.</p><p>The second thing is <a href="http://www.nber.org/papers/w18523">two</a> <a href="http://www.nber.org/papers/w18799">studies</a> supporting mismatch that <a href="http://www.brookings.edu/research/papers/2013/03/07-supreme-court-chingos">he</a> <a href="http://www.brookings.edu/research/papers/2013/03/13-science-minorities-chingos">reanalyzes</a>. The evidence supporting mismatch is mostly based on studies that control for what colleges students were accepted to. The problem with this is that, of course, we don’t know if it’s causal or if the students who choose to go to a less selective school are different in some way. Most students just go to the most selective college they’re accepted to or somewhere of approximately the same selectiveness, so we’re trying to trying to draw conclusions from this kinda small and weird group of students.</p><p>So what he does instead is look at the graduation rates for students who go to different schools, controlling not for what schools they were accepted to but for SAT score, GPA, parental education, and family income. And he found the opposite result–that students going to better schools had higher graduation rates. This method doesn’t have the issues of the previous one, but it clearly has its own issues–when controlling for SAT score and GPA, what colleges you’re accepted to probably has a lot to do with motivation and other stuff that clearly has an effect on whether you graduate college.</p><p>The second study was one that found that for URM students who stated an intention to major in science, going to a more selective school made them less likely to major in science. He agrees with this in his reanalysis, but says that this relationship got stronger <i>after </i>California instituted its affirmative action ban, which is the opposite of what you’d expect if affirmative action were the cause. I don’t know what’s up with that tbh.</p><p>(An issue that occurs to me with all the studies focusing on California is that, well, California college admissions <a href="http://www.nytimes.com/2013/08/04/education/edlife/lifting-the-veil-on-the-holistic-process-at-the-university-of-california-berkeley.html?_r=0">aren’t really race-blind</a>. We’re comparing a system that does a lot of explicit race-based affirmative action to a system that does a smaller amount of covert and very subjective race-based affirmative action. I mean, I wouldn’t be surprised if “applicants get +5 points if they’re black” is a way better system in terms of matching students correctly than “well, it would be illegal to ask you to consider race when reading these applications … but uh, we wouldn’t usually give that sort of student that sort of score …”)</p><p>What I haven’t seen, and what I’d like to see, is studies that survey URM students about happiness/feelings of belonging. Just thinking about my school, almost everyone graduates–we have a good support system and plenty of easy classes for you to take if you fail calculus. I think the issues go beyond not graduating. Although, I guess given the earnings boost from attending selective colleges, maybe four years of unhappiness is worth it if you get your degree at the end? I did find an interesting-looking <a href="http://www.seaphe.org/pdf/arcidiacono-social.pdf">paper</a>&nbsp;arguing that our current level of affirmative action is higher than the level that would maximize interracial interaction across all college students, since social segregation is more likely on campuses where there is a marked difference in academic preparation between students of different races.</p><p>So yeah. In conclusion, Chingos says that&nbsp;“To truly put the mismatch theory to rest, rigorous quasi-experimental evidence that focuses on the beneficiaries of preferential admissions policies is needed.” I agree with this. But I’m not quite as confident as him about which way the evidence will point.</p>
+          <div class="post-tags">
+      <a class="post-tag" href="../../../tagged/yfip%253A%20meritocracy/index.html">#yfip: meritocracy</a><a class="post-tag" href="../../../tagged/listen%20to%20economists%20they%20know%20things/index.html">#listen to economists they know things</a>
+    </div>
+        
+  </div>
+</article>
+  </section>
+
+      </main>
+    </div>
+    <script type="module">var e=document.querySelector(`#archive-theme`);if(e instanceof HTMLSelectElement){let t=document.documentElement.dataset.theme;e.value=t===`dark`||t===`light`?t:`auto`,e.addEventListener(`change`,()=>{let t=e.value;document.documentElement.dataset.theme=t;try{t===`auto`?localStorage.removeItem(`archive-theme`):localStorage.setItem(`archive-theme`,t)}catch{}})}</script></body>
+</html>

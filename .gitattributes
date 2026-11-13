@@ -1,0 +1,2 @@
+# Keep every file byte-for-byte as archived (no line-ending conversion on checkout).
+* -text

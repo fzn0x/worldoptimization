@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex">
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("archive-theme");
+          document.documentElement.dataset.theme =
+            savedTheme === "dark" || savedTheme === "light" ? savedTheme : "auto";
+        } catch {
+          document.documentElement.dataset.theme = "auto";
+        }
+      })();
+    </script><title>Fake Charity Nerd Girl (slatestarscratchpad all right more really stupid...)</title>
+    <link rel="icon" type="image/jpeg" href="../../../avatars/worldoptimization.jpg">
+    
+  <link rel="stylesheet" href="../../../_astro/ArchiveLayout.BwDbLHrJ.css"></head>
+  <body>
+    <label class="theme-picker">
+      <span class="visually-hidden">Color theme</span>
+      <select id="archive-theme" aria-label="Color theme">
+        <option value="auto">Auto Dark</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
+    </label>
+    <div class="archive-shell">
+      <header class="archive-masthead">
+  <img class="tumblr-avatar tumblr-avatar-image archive-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+  <h1><a href="../../../index.html">Fake Charity Nerd Girl</a></h1>
+  <p class="archive-subtitle">resist microstructural oppression</p>
+</header>
+      <main class="archive-layout">
+        
+  <section class="archive-feed individual-post-feed">
+    <article class="archive-post" data-post-id="642664297644916736">
+  <header class="post-header">
+    <img class="tumblr-avatar tumblr-avatar-image post-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+    <div class="post-heading">
+      <div class="post-blog">worldoptimization</div>
+      <div class="post-byline">
+        
+              Reblogged 
+              <span>slatestarscratchpad</span> 
+              · 2021-02-09 17:40:34
+            
+      </div>
+    </div>
+  </header>
+  <div class="post-content">
+    
+          
+<div class="reblog-chain">
+  <section class="reblog-section">
+  <a href="https://slatestarscratchpad.tumblr.com/post/642628876790579200/all-right-more-really-stupid-finance-questions" aria-label="View slatestarscratchpad" class="trail-heading trail-heading-link">
+    <img class="tumblr-avatar tumblr-avatar-image trail-avatar" src="../../../avatars/blogs/slatestarscratchpad.png" alt="" aria-hidden="true">
+    <div class="trail-copy">
+      <span>slatestarscratchpad</span>
+    </div>
+  </a>
+  <div class="trail-content">
+    <p>All right, more really stupid finance questions for Tumblr.</p><p>Suppose you buy $1000 of oil futures leveraged 100x. If I understand this right, if oil goes up $10, you make $1000. If oil goes down $10, you lose $1000 (all your money). Fair.</p><p>But if oil goes up $50, you make $5000, and if oil goes down $50, you already lost all your money at the moment it went down $10 so you can’t lose any more.</p><p>So it seems like as you increase the amount you’re leveraged, the potential profits go up a lot, but the potential losses stay fixed at “all your investment”. That seems…unfairly good? Like, if there’s a 50-50 chance oil will go up vs. down today, and I’m leveraged an infinite amount, then if it goes up I make infinity money, and if it goes down I lose some finite amount like $1000. If you have $2000 and are willing to wait two-ish days, it sounds like you have a strong expectation of making infinite money.</p><p>I’m obviously misunderstanding this egregiously, so what am I getting wrong?</p>
+  </div>
+</section><section class="reblog-section">
+  <div class="trail-heading">
+    <img class="tumblr-avatar tumblr-avatar-image trail-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+    <div class="trail-copy">
+      <span>worldoptimization</span>
+    </div>
+  </div>
+  <div class="trail-content">
+    <p>I think your example is sort of right to first order. But there are reasons this doesn’t quite work in practice.&nbsp;</p><p>Whoever is providing you leverage is aware that you can do this and will still want the trade to be positive EV for them. So generally they will liquidate your account once you’ve lost some money but while it’s still worth more than zero; in your example, maybe once oil goes down $5 the exchange takes over your account and keeps the remaining $500 for themselves, so for a $5 move you make $500 on the upside but lose all $1000 on the downside.</p><p>A tricky part of running a crypto exchange is setting all the parameters so that you don’t lose on net from this. The biggest question is what the max leverage and liquidation thresholds are by coin (100x is basically the max anyone offers, and that’s generally just on the most liquid coins), but there are also other parameters you can try to tune (eg my exchange charges extra trading fees if you use 50-100x leverage, to make up for potential losses from this).</p><p>Exchanges definitely fuck this up sometimes; OKEx a couple years ago was notorious for this. Their risk parameters basically meant that under a lot of circumstances it was just positive EV to do what you suggested. They lost a bunch of money to this and&nbsp;“socialized” the losses (passed them on to other users) which was understandably unpopular.</p><p>(I’m not an expert on traditional finance but my impression is that it’s a lot more boring; largely brokers will just try and have margin requirements conservative enough that it’s very unlikely for you to actually lose all your money.)</p><p>If you abstract away the financial details there’s also a question of like, what your utility function is. Is it infinitely good to do double-or-nothing coin flips forever? Well, sort of, because your upside is unbounded and your downside is bounded at your entire net worth. But most people don’t do this, because their utility is more like a function of their log wealth or something and they really don’t want to lose all of their money. (Of course those people are lame and not EAs; this blog endorses double-or-nothing coin flips and high leverage.)</p>
+  </div>
+</section>
+</div>
+
+          <div class="post-tags">
+      <a class="post-tag" href="../../../tagged/q%20u%20a%20r%20t%20e%20r%20l%20y%20c%20a%20p%20i%20t%20a%20l%20i%20s%20m/index.html">#q u a r t e r l y c a p i t a l i s m</a>
+    </div>
+        
+  </div>
+</article>
+  </section>
+
+      </main>
+    </div>
+    <script type="module">var e=document.querySelector(`#archive-theme`);if(e instanceof HTMLSelectElement){let t=document.documentElement.dataset.theme;e.value=t===`dark`||t===`light`?t:`auto`,e.addEventListener(`change`,()=>{let t=e.value;document.documentElement.dataset.theme=t;try{t===`auto`?localStorage.removeItem(`archive-theme`):localStorage.setItem(`archive-theme`,t)}catch{}})}</script></body>
+</html>

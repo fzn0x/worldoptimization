@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex">
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("archive-theme");
+          document.documentElement.dataset.theme =
+            savedTheme === "dark" || savedTheme === "light" ? savedTheme : "auto";
+        } catch {
+          document.documentElement.dataset.theme = "auto";
+        }
+      })();
+    </script><title>Fake Charity Nerd Girl (some thoughts on leadership i used to think...)</title>
+    <link rel="icon" type="image/jpeg" href="../../../avatars/worldoptimization.jpg">
+    
+  <link rel="stylesheet" href="../../../_astro/ArchiveLayout.BwDbLHrJ.css"></head>
+  <body>
+    <label class="theme-picker">
+      <span class="visually-hidden">Color theme</span>
+      <select id="archive-theme" aria-label="Color theme">
+        <option value="auto">Auto Dark</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
+    </label>
+    <div class="archive-shell">
+      <header class="archive-masthead">
+  <img class="tumblr-avatar tumblr-avatar-image archive-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+  <h1><a href="../../../index.html">Fake Charity Nerd Girl</a></h1>
+  <p class="archive-subtitle">resist microstructural oppression</p>
+</header>
+      <main class="archive-layout">
+        
+  <section class="archive-feed individual-post-feed">
+    <article class="archive-post" data-post-id="632375082483875840">
+  <header class="post-header">
+    <img class="tumblr-avatar tumblr-avatar-image post-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+    <div class="post-heading">
+      <div class="post-blog">worldoptimization</div>
+      <div class="post-byline">
+        2020-10-19 03:57:54
+      </div>
+    </div>
+  </header>
+  <div class="post-content">
+    
+          
+
+<p>some thoughts on leadership:</p><p>I used to think something like&nbsp;“it’s bad to be overconfident, and people who say things about how leaders should be confident are just promoting bad epistemic norms.”</p><p>now I think something more like–there are lots of situations where no one really knows what to do, and you need to make a decision. lots of people’s instinct in those situations is to ask the person in charge; but it turns out, the person in charge often doesn’t really know what to do either!</p><p>and leadership, in these cases, means not panicking or doing nothing or trying to find a person even more in charge, but instead coming up with your best guess–even if you’re super uncertain–and stating confidently and decisively&nbsp;“let’s do X.”</p><p>and if someone says&nbsp;“no actually, wouldn’t it be better to do Y instead because of Z” then great! none of this means you shouldn’t update on evidence or listen to other people’s opinions. just that there are a lot of situations that come down to&nbsp;“no one really knows, and someone needs to make a call and accept the responsibility if it turns out to be totally wrong” and being willing to do that is really valuable.</p>
+          
+        
+  </div>
+</article>
+  </section>
+
+      </main>
+    </div>
+    <script type="module">var e=document.querySelector(`#archive-theme`);if(e instanceof HTMLSelectElement){let t=document.documentElement.dataset.theme;e.value=t===`dark`||t===`light`?t:`auto`,e.addEventListener(`change`,()=>{let t=e.value;document.documentElement.dataset.theme=t;try{t===`auto`?localStorage.removeItem(`archive-theme`):localStorage.setItem(`archive-theme`,t)}catch{}})}</script></body>
+</html>

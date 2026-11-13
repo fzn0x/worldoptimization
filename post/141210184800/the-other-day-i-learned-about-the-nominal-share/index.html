@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex">
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("archive-theme");
+          document.documentElement.dataset.theme =
+            savedTheme === "dark" || savedTheme === "light" ? savedTheme : "auto";
+        } catch {
+          document.documentElement.dataset.theme = "auto";
+        }
+      })();
+    </script><title>Fake Charity Nerd Girl (the other day i learned about the nominal share...)</title>
+    <link rel="icon" type="image/jpeg" href="../../../avatars/worldoptimization.jpg">
+    
+  <link rel="stylesheet" href="../../../_astro/ArchiveLayout.BwDbLHrJ.css"></head>
+  <body>
+    <label class="theme-picker">
+      <span class="visually-hidden">Color theme</span>
+      <select id="archive-theme" aria-label="Color theme">
+        <option value="auto">Auto Dark</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
+    </label>
+    <div class="archive-shell">
+      <header class="archive-masthead">
+  <img class="tumblr-avatar tumblr-avatar-image archive-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+  <h1><a href="../../../index.html">Fake Charity Nerd Girl</a></h1>
+  <p class="archive-subtitle">resist microstructural oppression</p>
+</header>
+      <main class="archive-layout">
+        
+  <section class="archive-feed individual-post-feed">
+    <article class="archive-post" data-post-id="141210184800">
+  <header class="post-header">
+    <img class="tumblr-avatar tumblr-avatar-image post-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+    <div class="post-heading">
+      <div class="post-blog">worldoptimization</div>
+      <div class="post-byline">
+        2016-03-17 18:01:18
+      </div>
+    </div>
+  </header>
+  <div class="post-content">
+    
+          
+
+<p>The other day I learned about the nominal share price puzzle. Like, since the Great Depression the price of pretty much everything has changed dramatically. Except stocks! Stocks cost exactly the same. The average share of stock cost $35 then and it costs $35 now.</p><p>And like, the stock market has gone up so much since then! If you bought a share of GE for $38 in 1935 it would be worth like $10,000 now. Except it wouldn’t, because GE has split their stock a ton of times so you would actually just own a whole lot of shares that are worth $30 each.</p><p>Why do they do this? It costs GE money in administrative costs. It costs shareholders money in trading costs. And it doesn’t have to be this way: Japan and the UK both have totally non-constant nominal share prices.</p><p>The authors of <a href="http://faculty.chicagobooth.edu/Richard.Thaler/research/pdf/The%20Nominal%20Share%20Price%20Puzzle.pdf">this paper</a>&nbsp;suggest one reason could be to market to individual investors. But if that were the case why wouldn’t share prices at least keep up with inflation? And this hypothesis would also predict that as stocks have become mostly held by institutions rather than individuals, the effect would diminish, but it hasn’t.</p><p>Another fun theory is that when stock prices are low relative tick sizes are high, so companies keep their prices low to compensate market makers for providing liquidity in their stock. But that would predict that stock prices would change when tick size changed in 1997, and they didn’t. And do executives at GE really lie awake at night worrying that if their share price goes above $100 no one will provide liquidity in their stock anymore?</p><p>The authors end up concluding that there’s no good economic explanation and everyone does it because, uh, it’s what everyone does. It was kind of unsatisfying.</p>
+          <div class="post-tags">
+      <a class="post-tag" href="../../../tagged/q%20u%20a%20r%20t%20e%20r%20l%20y%20c%20a%20p%20i%20t%20a%20l%20i%20s%20m/index.html">#q u a r t e r l y c a p i t a l i s m</a>
+    </div>
+        
+  </div>
+</article>
+  </section>
+
+      </main>
+    </div>
+    <script type="module">var e=document.querySelector(`#archive-theme`);if(e instanceof HTMLSelectElement){let t=document.documentElement.dataset.theme;e.value=t===`dark`||t===`light`?t:`auto`,e.addEventListener(`change`,()=>{let t=e.value;document.documentElement.dataset.theme=t;try{t===`auto`?localStorage.removeItem(`archive-theme`):localStorage.setItem(`archive-theme`,t)}catch{}})}</script></body>
+</html>

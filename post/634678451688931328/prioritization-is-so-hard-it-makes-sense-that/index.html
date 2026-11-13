@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex">
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("archive-theme");
+          document.documentElement.dataset.theme =
+            savedTheme === "dark" || savedTheme === "light" ? savedTheme : "auto";
+        } catch {
+          document.documentElement.dataset.theme = "auto";
+        }
+      })();
+    </script><title>Fake Charity Nerd Girl (prioritization is so hard it makes sense that...)</title>
+    <link rel="icon" type="image/jpeg" href="../../../avatars/worldoptimization.jpg">
+    
+  <link rel="stylesheet" href="../../../_astro/ArchiveLayout.BwDbLHrJ.css"></head>
+  <body>
+    <label class="theme-picker">
+      <span class="visually-hidden">Color theme</span>
+      <select id="archive-theme" aria-label="Color theme">
+        <option value="auto">Auto Dark</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
+    </label>
+    <div class="archive-shell">
+      <header class="archive-masthead">
+  <img class="tumblr-avatar tumblr-avatar-image archive-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+  <h1><a href="../../../index.html">Fake Charity Nerd Girl</a></h1>
+  <p class="archive-subtitle">resist microstructural oppression</p>
+</header>
+      <main class="archive-layout">
+        
+  <section class="archive-feed individual-post-feed">
+    <article class="archive-post" data-post-id="634678451688931328">
+  <header class="post-header">
+    <img class="tumblr-avatar tumblr-avatar-image post-avatar" src="../../../avatars/worldoptimization.jpg" alt="" aria-hidden="true">
+    <div class="post-heading">
+      <div class="post-blog">worldoptimization</div>
+      <div class="post-byline">
+        2020-11-13 14:08:58
+      </div>
+    </div>
+  </header>
+  <div class="post-content">
+    
+          
+
+<p>Prioritization is so hard!</p><p>It makes sense, that thinking about and figuring out priorities would be hard. I think the thing I find surprising is just how hard it is to communicate about them.</p><p>Like, I have dozens if not hundreds of interactions a day where I’m on either side of this dynamic:</p><ul><li>A asks B to do something</li><li>A has more information than B about the thing, why it’s important, the broader context</li><li>B has more information than A about how hard it is, what the various constraints are on it, what other things B is doing and how important they are</li><li>often B then delegates to C which adds extra noise and room for miscommunication: if B can misinterpret A and C can misinterpret B that’s twice as much room for error</li></ul><p>In some ideal world, whenever this happens, A and B (and C if they’re involved) would just get together and talk through all the information they both know, and put it all together to come to a conclusion. In the real world, this happens to me 50 times a day and there’s not close to enough time to do that except for the biggest and most important things.&nbsp;</p><p>Instead what happens is more like:</p><ul><li>everyone learns a series of heuristics. the most important is a function from (person, how important do they seem to think it is) -&gt; actual importance</li><li>besides that, there are heuristics based on topic&nbsp;</li><li>in the simplest form these are are just rules that people try to formulate and pass down to their reports:&nbsp;“if a customer complains about X that’s important, if they complain about Y it’s not”</li><li>you start by learning the rules, then you learn the meta-rules that generated them (which makes the rules easier to remember/deduce as well as making you feel more motivated to execute them). and so on and so forth</li><li>as you move up levels, your job increases in complexity on a spectrum from&nbsp;“execute memorized rules” to&nbsp;“think hard about what the most important things are and then prioritize them”</li></ul><p>A corollary to all of this is that it’s actually really valuable to have people who understand a wide variety of stuff beyond their specialization, enough to prioritize a lot of it well. If you want to assign things to someone you can’t trust to prioritize well, you have to:</p><ul><li>check in with them whenever you assign them something to make sure they’re correctly valuing it compared to their other tasks</li><li>check in a lot in general to make sure they’re not sidetracked by something unimportant</li><li>make sure they’re valuing tasks correctly relative to things like sleep, fun, sanity which can be super awkward and touchy (but important to get right! and people often err on both sides)</li></ul><p>Whereas being able to assign something to someone and trust that it will get done if and only if it’s correct for it to get done is just magical.</p>
+          <div class="post-tags">
+      <a class="post-tag" href="../../../tagged/q%20u%20a%20r%20t%20e%20r%20l%20y%20c%20a%20p%20i%20t%20a%20l%20i%20s%20m/index.html">#q u a r t e r l y c a p i t a l i s m</a>
+    </div>
+        
+  </div>
+</article>
+  </section>
+
+      </main>
+    </div>
+    <script type="module">var e=document.querySelector(`#archive-theme`);if(e instanceof HTMLSelectElement){let t=document.documentElement.dataset.theme;e.value=t===`dark`||t===`light`?t:`auto`,e.addEventListener(`change`,()=>{let t=e.value;document.documentElement.dataset.theme=t;try{t===`auto`?localStorage.removeItem(`archive-theme`):localStorage.setItem(`archive-theme`,t)}catch{}})}</script></body>
+</html>
